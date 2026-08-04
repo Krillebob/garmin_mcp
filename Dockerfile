@@ -17,6 +17,7 @@ ENV PYTHONUNBUFFERED=1 \
 
 # Copy dependency files and README first for better layer caching
 COPY pyproject.toml README.md ./
+COPY start.py ./
 
 # Copy the application source code (needed for editable install)
 COPY src/ ./src/
